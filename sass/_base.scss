@@ -1,1 +1,31 @@
-$color-missing : #333;
+@import "compass/reset";
+@import "banner";
+
+$color-missing : #777;
+$color-action: #0645AD;
+
+body {
+  font-family: sans-serif;
+  background-color: #E7E7E7;
+}
+
+a, .action.actionable {
+  color: $color-action;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover, .action.actionable:hover {
+  text-decoration: underline;
+}
+
+a.home {
+  color: #000;
+}
+a.home:hover {
+  text-decoration: none;
+}
+
+.clearboth {
+  clear: both;
+}

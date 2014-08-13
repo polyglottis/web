@@ -1,0 +1,59 @@
+
+.actions {
+  text-align: right;
+  border-bottom: 0.1em solid #777;
+}
+
+.action {
+  border-left: 0.1em solid black;
+  padding: 0 0.3em;
+  display: block;
+}
+
+ul.actions, ul.menuBody {
+  padding:0;
+  margin: 0;
+}
+
+ul.actions li {
+  list-style-type: none;
+  display: inline-block;
+  position: relative;
+}
+
+ul.actions li ul.menuBody {
+  text-align: left;
+  display: none;
+  position: absolute;
+  top: 1.1em;
+  left: 0;
+  background-color: #FFF;
+  border: 0.1em solid black;
+}
+
+ul.actions li.menu:hover {
+  background-color: #D5D5D5;
+}
+
+ul.actions li.menu>.label:after {
+  content: " \25BE";
+}
+
+ul.actions li.menu .label {
+  text-decoration: none;
+}
+
+ul.actions li:hover ul.menuBody {
+  display: block;
+}
+
+ul.menuBody li {
+  display: block;
+}
+
+ul.menuBody .action {
+  border: none;
+  padding: 0;
+  display: block;
+  margin: 0.2em;
+}

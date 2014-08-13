@@ -1,5 +1,37 @@
 @import "base";
+@import "panel";
+@import "content";
+@import "actions";
 
 .missing {
-	text-color: $color-missing;
+	color: $color-missing;
+}
+
+
+.extractContent {
+  margin: 1em;
+}
+
+.source {
+  text-align: right;
+  color: #555;
+  margin-top: 0.5em;
+}
+
+.extractContent #body {
+  line-height: 1.5em;
+}
+
+.extractContent h1 {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1.5em;
+  width: 15.2em;
+	font-weight: bolder;
+}
+
+.extractContent .orig, .extractContent .translation, .extractContent .transcript {
+  display: inline-block;
+  width: 22em;
+  vertical-align: top;
 }

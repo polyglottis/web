@@ -1,0 +1,27 @@
+@import "compass/utilities/sprites";
+@import "banner/*.png";
+@include all-banner-sprites;
+
+.banner {
+  background-color: white;
+  padding: 1em;
+  box-shadow: 0em -1em 1em -1em #D5D5D5 inset;
+}
+
+.banner .bannerContent {
+  text-align: middle;
+}
+
+.banner .logo {
+  vertical-align: middle;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+}
+
+.bannerTitle {
+  margin-left: 0.2em;
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 2em;
+}
