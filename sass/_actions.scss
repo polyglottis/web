@@ -10,18 +10,13 @@
   display: block;
 }
 
-ul.actions, ul.menuBody {
-  padding:0;
-  margin: 0;
-}
-
 ul.actions li {
   list-style-type: none;
   display: inline-block;
   position: relative;
 }
 
-ul.actions li ul.menuBody {
+ul.actions .menuBody {
   text-align: left;
   display: none;
   position: absolute;
@@ -43,15 +38,15 @@ ul.actions li.menu .label {
   text-decoration: none;
 }
 
-ul.actions li:hover ul.menuBody {
+ul.actions li:hover .menuBody {
   display: block;
 }
 
-ul.menuBody li {
+ul.actions .menuBody li {
   display: block;
 }
 
-ul.menuBody .action {
+.menuBody .action {
   border: none;
   padding: 0;
   display: block;
