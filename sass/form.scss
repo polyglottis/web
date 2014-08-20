@@ -1,0 +1,44 @@
+@import "base";
+@import "panel";
+
+.form {
+	@include content-box;
+	margin: 1em auto;
+	
+	.formError {
+		color: $color-error;
+	}
+	
+	h1 {
+		font-size: 120%;
+		margin: 1em 0;
+		@include bottom-line(0.1em);
+	}
+	
+	.property {
+		font-weight: bolder;
+		margin-top: 1em;
+		margin-bottom: 0.2em;
+	}
+	
+	.formInput {
+		margin: 0.1em 0;
+		width: 20em;
+	}
+	
+	.error {
+		color: $color-error;
+	}
+	
+	.hint {
+		color: $color-missing;
+	}
+	
+	.submit {
+		margin: 1em 0;
+	}
+}
+
+.form.compact {
+	width: 30em;
+}

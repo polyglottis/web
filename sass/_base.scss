@@ -3,6 +3,8 @@
 
 $color-missing : #777;
 $color-action: #0645AD;
+$color-line: #55D;
+$color-error: #911;
 
 body {
   font-family: sans-serif;
@@ -33,4 +35,17 @@ a.home:hover {
 .errorPage {
 	padding: 2em;
 	font-size: 200%;
+}
+
+@mixin bottom-line($thickness) {
+	padding-bottom: $thickness;
+	border-bottom: $thickness solid $color-line;
+}
+
+@mixin content-box {
+	font-size: 0.875em;
+  padding: 1em;
+  width: 50em;
+  background-color: white;
+  box-shadow: 0.2em 0.2em 0.8em 0.3em #999;
 }
