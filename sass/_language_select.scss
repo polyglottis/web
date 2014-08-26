@@ -1,4 +1,15 @@
 
-.language-select td {
-	padding: 1em;
+.language-select {
+	td {
+		padding: 1em;
+		width: 22em;
+	}
+	
+	.create-new-flavor {
+		margin-left: 1em;
+	}
+	
+	.submit {
+		margin-left: 1em;
+	}
 }
