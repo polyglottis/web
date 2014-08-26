@@ -4,38 +4,34 @@
 @import "actions";
 @import "language_select";
 
-.missing {
-	color: $color-missing;
-}
-
 .extractContent {
   margin: 1em;
 	
-	p {
-		margin: 1em 0;
+	#body {
+		line-height: 1.5em;
 	}
-}
-
-.source {
-  text-align: right;
-  color: #555;
-  margin-top: 0.5em;
-}
-
-.extractContent #body {
-  line-height: 1.5em;
-}
-
-.extractContent h1 {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 1.5em;
-  width: 15.2em;
-	font-weight: bolder;
-}
-
-.extractContent .orig, .extractContent .translation, .extractContent .transcript {
-  display: inline-block;
-  width: 22em;
-  vertical-align: top;
+	
+	p {
+		margin: 0.5em 0;
+	}
+	
+	.a-side, .b-side {
+		display: inline-block;
+		width: 23em;
+	}
+	
+	.a-side {
+		margin-right: 1em;
+	}
+	
+	h1 {
+		font-size: 1.5em;
+		vertical-align: top;
+		font-weight: bolder;
+		margin: 1em 0 0.5em 0;
+	}
+	
+	h1 .a-side, h1 .b-side {
+		width: 15em;
+	}
 }

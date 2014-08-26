@@ -10,45 +10,72 @@
   display: block;
 }
 
-ul.actions li {
-  list-style-type: none;
-  display: inline-block;
-  position: relative;
+.missing {
+	color: $color-missing;
 }
 
-ul.actions .menuBody {
-  text-align: left;
-  display: none;
-  position: absolute;
-  top: 1.1em;
-  left: 0;
-  background-color: #FFF;
-  border: 0.1em solid black;
+.action.missing:hover {
+	text-decoration: none;
 }
 
-ul.actions li.menu:hover {
-  background-color: #D5D5D5;
+ul.actions {
+	li {
+		list-style-type: none;
+		display: inline-block;
+		position: relative;
+	}
+	
+	.menuBody {
+		text-align: left;
+		display: none;
+		position: absolute;
+		top: 1.1em;
+		left: 0;
+		background-color: #FFF;
+		border: 0.1em solid black;
+	}
+	
+	.editMenu {
+		left: -3em;
+		width: 18em;
+	}
+	
+	.menuSide {
+		margin: 0.2em;
+		display: inline-block;
+		width: 8em;
+		
+		.languageHeader {
+			font-weight: bolder;
+			margin: 0.5em 0.2em;
+		}
+	}
+	
+	li.menu:hover {
+		background-color: #D5D5D5;
+	}
+	
+	li.menu>.label:after {
+		content: " \25BE";
+	}
+
+	li.menu .label {
+		text-decoration: none;
+	}
+
+	li:hover .menuBody {
+		display: block;
+	}
+
+	.menuBody li {
+		display: block;
+	}
+
+	.menuBody .action {
+		border: none;
+		padding: 0;
+		display: block;
+		margin: 0.2em;
+	}
 }
 
-ul.actions li.menu>.label:after {
-  content: " \25BE";
-}
-
-ul.actions li.menu .label {
-  text-decoration: none;
-}
-
-ul.actions li:hover .menuBody {
-  display: block;
-}
-
-ul.actions .menuBody li {
-  display: block;
-}
-
-.menuBody .action {
-  border: none;
-  padding: 0;
-  display: block;
-  margin: 0.2em;
-}

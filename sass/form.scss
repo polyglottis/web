@@ -1,67 +1,11 @@
 @import "base";
 @import "panel";
+@import "form_content";
 
 .form {
 	@include content-box;
 	margin: 1em auto;
 	line-height: 1.2em;
-	
-	.formError {
-		color: $color-error;
-	}
-	
-	h1 {
-		font-size: 120%;
-		margin: 1em 0;
-		@include bottom-line(0.1em);
-	}
-	
-	.property {
-		font-weight: bolder;
-		margin-top: 2em;
-		margin-bottom: 0.2em;
-		
-		a {
-			font-weight: normal;
-		}
-	}
-	
-	.formInput {
-		font-family: monospace;
-		margin: 0.1em 0;
-		width: 20em;
-	}
-	
-	.formInput.Title {
-		width: 40em;
-	}
-	
-	.error {
-		color: $color-error;
-	}
-	
-	.hint {
-		color: $color-missing;
-	}
-	
-	.submit {
-		margin: 2em 0 1em 0;
-	}
-	
-	select {
-		margin: 0.1em 0;
-	}
-	
-	textarea {
-		font-family: monospace;
-		width: 50em;
-		height: 4em;
-		margin: 0.1em 0;
-	}
-	
-	textarea.Text {
-		height: 25em;
-	}
 }
 
 .form.compact {

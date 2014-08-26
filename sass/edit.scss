@@ -1,0 +1,21 @@
+@import "base";
+@import "panel";
+@import "content";
+@import "actions";
+@import "language_select";
+@import "form_content";
+
+.edit-text {
+	.language {
+		margin: 0.4em 0 0.2em 0;
+		color: $color-missing;
+	}
+	
+	.line {
+		margin: 0.5em 0 1em 0;
+	}
+	
+	.cancel {
+		margin-right: 1em;
+	}
+}
