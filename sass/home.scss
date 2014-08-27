@@ -1,0 +1,35 @@
+@import "base";
+@import "content";
+
+.home {
+	h1 {
+		font-size: 200%;
+		margin: 1em;
+	}
+	
+	p {
+		margin: 0.5em 0;
+	}
+	
+	.select {
+		margin: 0.3em 0;
+		
+		.label {
+			display: inline-block;
+			width: 8em;
+		}
+	}
+	
+	.submit {
+		width: 10em;
+		height: 2em;
+		margin: 1em;
+	}
+	
+	.results {
+	}
+	
+	.result {
+		margin: 1em 0;
+	}
+}

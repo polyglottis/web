@@ -1,5 +1,4 @@
 @import "base";
-@import "panel";
 @import "content";
 @import "actions";
 @import "language_select";
@@ -11,13 +10,14 @@
 		line-height: 1.5em;
 	}
 	
-	p {
-		margin: 0.5em 0;
+	.block {
+		margin: 0.75em 0;
 	}
 	
 	.a-side, .b-side {
 		display: inline-block;
 		width: 23em;
+		vertical-align: top;
 	}
 	
 	.a-side {
@@ -25,13 +25,14 @@
 	}
 	
 	h1 {
-		font-size: 1.5em;
-		vertical-align: top;
-		font-weight: bolder;
-		margin: 1em 0 0.5em 0;
+		@include header;
 	}
 	
 	h1 .a-side, h1 .b-side {
 		width: 15em;
+	}
+	
+	h1 .a-side {
+		margin-right: 0.75em;
 	}
 }

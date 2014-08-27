@@ -1,10 +1,7 @@
 @import "compass/reset";
 @import "banner";
-
-$color-missing : #777;
-$color-action: #0645AD;
-$color-line: #55D;
-$color-error: #911;
+@import "panel";
+@import "colors";
 
 body {
   font-family: sans-serif;
@@ -48,4 +45,62 @@ a.home:hover {
   width: 50em;
   background-color: white;
   box-shadow: 0.2em 0.2em 0.8em 0.3em #999;
+  display: inline-block;
+	vertical-align: top;
+  margin: 1em;
+}
+
+@mixin header {
+	font-size: 1.5em;
+	margin: 1em 0;
+	@include bottom-line(0.1em);
+}
+
+$color-button-light: #DDD;
+$color-button-dark: #BBB;
+$color-button-border: #AAA;
+
+.button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #FFF;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #FFF;
+	box-shadow:inset 0px 1px 0px 0px #FFF;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, $color-button-light), color-stop(1, $color-button-dark) );
+	background:-moz-linear-gradient( center top, $color-button-light 5%, $color-button-dark 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=$color-button-light, endColorstr=$color-button-dark);
+	background-color:$color-button-light;
+	text-indent:0;
+	border:1px solid $color-button-border;
+	display:inline-block;
+	line-height: 1.5em;
+	height: 2em;
+	width: 5em;
+	text-decoration:none;
+	text-align:center;
+}
+
+.button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, $color-button-dark), color-stop(1, $color-button-light) );
+	background:-moz-linear-gradient( center top, $color-button-dark 5%, $color-button-light 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=$color-button-dark, endColorstr=$color-button-light);
+	background-color:$color-button-dark;
+}
+
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+@mixin button-disabled {
+	.button {
+		color: $color-missing;
+	}
+	.button:hover {
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, $color-button-light), color-stop(1, $color-button-dark) );
+		background:-moz-linear-gradient( center top, $color-button-light 5%, $color-button-dark 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=$color-button-light, endColorstr=$color-button-dark);
+		background-color:$color-button-light;
+	}
+	.button:active {
+		top:0;
+	}
 }

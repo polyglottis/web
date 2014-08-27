@@ -5,9 +5,7 @@
 	}
 	
 	h1 {
-		font-size: 120%;
-		margin: 1em 0;
-		@include bottom-line(0.1em);
+		@include header;
 	}
 	
 	.property {
